@@ -6,6 +6,8 @@
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/menu";
+@import "./components/hero";
 
 // тестовые стили, удалите их
 .page__body {
@@ -13,4 +15,53 @@
   align-items: center;
   justify-content: center;
   height: var(--vh);
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+  color: var(--primary-color);
+
+  &--main {
+    font-size: 38px;
+    line-height: 57px;
+  }
+}
+
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--text-color);
+}
+
+.btn-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--primary-color);
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 8px;
+  border: transparent;
+  padding: 10px 100px 10px 12px;
+  position: relative;
+  &::after{
+    
+  }
+  &--fill {
+    color: #fff;
+    &-purple {
+      background-color: var(--purple-color);
+    }
+
+    &-pink {
+      background-color: var(--pink-color);
+    }
+  }
 }

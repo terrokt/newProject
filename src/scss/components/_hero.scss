@@ -1,0 +1,21 @@
+
+.hero{
+  &__img{
+    width: 615px;
+    height: 490px;
+    background-image: url(../img/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 490px;
+  }
+}
